@@ -5,6 +5,7 @@ import { useFormik } from "formik";
 import { Navigate, useNavigate, Link } from "react-router-dom";
 import * as yup from "yup";
 import { API } from "./Global";
+import img from "../src/assets/login.jpg";
 
 const LoginValidationSchema = yup.object({
   email: yup.string().required(),
@@ -41,7 +42,10 @@ function Login() {
   });
 
   return (
-    <div>
+    <div className="login-container">
+      <div>
+        <img className="login-img" src={img} />
+      </div>
       <form className="register-container" onSubmit={formik.handleSubmit}>
         <h3 className="register">Login</h3>
         <TextField
