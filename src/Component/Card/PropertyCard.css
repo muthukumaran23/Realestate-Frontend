@@ -1,0 +1,23 @@
+.card-container{
+    display: flex;
+    gap: 30px;
+    padding: 60px;
+}
+
+.card{
+    padding: 20px;
+    background-color: aliceblue;
+    text-align: left;
+
+}
+
+.card-head{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.location{
+    margin-bottom: 10px;
+}
