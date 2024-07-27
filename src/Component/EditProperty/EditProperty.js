@@ -22,7 +22,7 @@ function EditProperty() {
   }, []);
 
   const getSingle = async () => {
-    const data = await fetch(`${API}/property/${id}`, {
+    const data = await fetch(`${API}/property/findOne/${id}`, {
       method: "GET",
       headers: {
         Auth: localStorage.getItem("token"),
